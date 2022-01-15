@@ -1,0 +1,133 @@
+/* ----------fonts--------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(216, 199, 199, 0.473);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+nav{
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+/* top-banner */
+h2{
+    font-size: 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.half-width{
+    height: 50%;
+    width: 50%;
+}
+.img{
+    background-color: white;
+    border: 0.1px solid rgb(82, 204, 212);
+    border-radius: 50%;
+    margin: 50px;
+    }
+.link-button{
+    text-decoration: none;
+    background-image: linear-gradient(orange,tomato);
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+    border-radius: 20px;
+}
+
+/* --------------popular collection---------------- */
+.container-2{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    }
+#section-title{
+    font-size: 20px;
+    text-align: center;
+}
+
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-gap: 20px 20px;
+    grid-column: auto;
+}
+.collection{
+    background-color: white;
+    height: 450px;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.collection-img{
+    width: fit-content;
+    height: fit-content;
+}
+.collection-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star filled, fa-star-half-alt{
+    font-size: 1px;
+    justify-content: space-around;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star-half-alt{
+    color: #FFC014;
+} 
+/* footer */
+footer{
+    background-color: rgba(180, 151, 151, 0.822);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Media Quaries */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container, .container-2{
+        width: 100%;
+    }
+    .half-width, .container, .collections{
+        grid-template-columns: repeat(1,1fr);
+        }
+        .half-width, .container, .container-2{
+            flex-direction: column;
+        }
+}
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container .container-2{
+        width: 100%;
+    }
+    .half-width, .collections{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container, .container-2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
